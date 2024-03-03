@@ -13,16 +13,16 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/rtu-tc/AspNetCore.UptimeKumaPushHealthCheck</RepositoryUrl>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Updated extension method namespace to Microsoft.Extensions.DependencyInjection</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Added EnsureSuccessStatusCode to response</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE">
+    <None Include="..\..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

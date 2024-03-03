@@ -12,6 +12,7 @@ public sealed class UptimeKumaHealthCheckPublisher(HttpClient httpClient) : IHea
             .Add("status", report.Status == HealthStatus.Healthy ? "up" : "down")
             .Add("msg", report.Status.ToString())
             .Add("ping", report.TotalDuration.TotalMilliseconds.ToString(CultureInfo.InvariantCulture));
-        await httpClient.GetAsync(query.ToUriComponent(), cancellationToken);
+        var response = await httpClient.GetAsync(query.ToUriComponent(), cancellationToken);
+        response.EnsureSuccessStatusCode();
     }
 }

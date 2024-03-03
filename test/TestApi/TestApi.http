@@ -1,0 +1,5 @@
+@TestApi_HostAddress = http://localhost:5245
+
+GET {{TestApi_HostAddress}}/healthz/
+
+###
