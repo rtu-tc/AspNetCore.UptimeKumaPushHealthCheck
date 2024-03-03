@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://github.com/rtu-tc/AspNetCore.UptimeKumaPushHealthCheck</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/rtu-tc/AspNetCore.UptimeKumaPushHealthCheck</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
