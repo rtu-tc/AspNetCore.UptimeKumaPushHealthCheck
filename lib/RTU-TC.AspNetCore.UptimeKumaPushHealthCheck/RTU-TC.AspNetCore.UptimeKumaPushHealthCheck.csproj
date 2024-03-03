@@ -13,8 +13,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/rtu-tc/AspNetCore.UptimeKumaPushHealthCheck</RepositoryUrl>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Added EnsureSuccessStatusCode to response</PackageReleaseNotes>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>Rename AddUptimePushCheck to AddUptimeKumaPushCheck</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

@@ -11,5 +11,5 @@
 1. Create monitor with `Push` Monitor type
 1. Use `Push URL` without query string to add [`IHealthCheckPublisher`](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks#health-check-publisher)
     ```cs
-      builder.Services.AddUptimePushCheck(new Uri("http://localhost:3001/api/push/token")); // Don't forget to remove query parameters from the URL.
+      builder.Services.AddUptimeKumaPushCheck(new Uri("http://localhost:3001/api/push/token")); // Don't forget to remove query parameters from the URL.
     ```
