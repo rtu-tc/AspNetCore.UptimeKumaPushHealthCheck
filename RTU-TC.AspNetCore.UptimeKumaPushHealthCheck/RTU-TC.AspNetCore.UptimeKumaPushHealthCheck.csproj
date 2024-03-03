@@ -6,13 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>RTU-TC,CAPCHIK</Authors>
+    <Authors>RTU-TC</Authors>
     <Company>RTU-TC</Company>
     <Description>ASP.NET Core Health Check Publisher for Uptime Kuma</Description>
     <PackageProjectUrl>https://github.com/rtu-tc/AspNetCore.UptimeKumaPushHealthCheck</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/rtu-tc/AspNetCore.UptimeKumaPushHealthCheck</RepositoryUrl>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Updated extension method namespace to Microsoft.Extensions.DependencyInjection</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

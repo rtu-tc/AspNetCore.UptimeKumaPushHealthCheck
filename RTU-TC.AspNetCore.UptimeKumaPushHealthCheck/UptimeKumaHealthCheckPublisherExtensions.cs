@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
+using RTU_TC.AspNetCore.UptimeKumaPushHealthCheck;
 
-namespace RTU_TC.AspNetCore.UptimeKumaPushHealthCheck;
+namespace Microsoft.Extensions.DependencyInjection;
 
 public static class UptimeKumaHealthCheckPublisherExtensions
 {
