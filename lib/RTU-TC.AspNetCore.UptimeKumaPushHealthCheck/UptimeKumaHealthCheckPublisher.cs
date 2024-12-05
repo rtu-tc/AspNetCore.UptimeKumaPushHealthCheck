@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Globalization;
 
 namespace RTU_TC.AspNetCore.UptimeKumaPushHealthCheck;
@@ -8,11 +7,7 @@ public sealed class UptimeKumaHealthCheckPublisher(HttpClient httpClient) : IHea
 {
     public async Task PublishAsync(HealthReport report, CancellationToken cancellationToken)
     {
-        var query = new QueryString()
-            .Add("status", report.Status == HealthStatus.Healthy ? "up" : "down")
-            .Add("msg", report.Status.ToString())
-            .Add("ping", report.TotalDuration.TotalMilliseconds.ToString(CultureInfo.InvariantCulture));
-        var response = await httpClient.GetAsync(query.ToUriComponent(), cancellationToken);
+        var response = await httpClient.GetAsync($"?status={(report.Status == HealthStatus.Healthy ? "up" : "down")}&msg={Uri.EscapeDataString(report.Status.ToString())}&ping={report.TotalDuration.TotalMilliseconds.ToString(CultureInfo.InvariantCulture)}", cancellationToken);
         response.EnsureSuccessStatusCode();
     }
 }
